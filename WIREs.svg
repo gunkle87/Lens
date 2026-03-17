@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="900" viewBox="0 0 2200 900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1d22"/>
+      <stop offset="100%" stop-color="#101215"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; fill: #f2f4f7; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #c8d0d8; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #c8d0d8; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #aeb8c2; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="2200" height="900" fill="url(#bgGrad)"/>
+
+  <text x="70" y="70" class="title">90-Degree Wire Test - Blue Rounded Corner Bloom</text>
+  <text x="70" y="110" class="subtitle">Bottom row now turns downward like the top row. Wire thickness: 34, corner radius: 68.</text>
+
+  <!-- top row -->
+
+  <!-- 1 -->
+  <g filter="url(#softShadow)">
+    <path d="M120 320 H352 Q420 320 420 388 V620"
+          fill="none" stroke="#0a0a0a" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+    <path d="M120 320 H352 Q420 320 420 388 V620"
+          fill="none" stroke="#1d2f5a" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M120 310 H352 Q420 310 420 378 V610"
+          fill="none" stroke="#d0e4f7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+  </g>
+  <text x="250" y="760" class="label">1</text>
+  <text x="185" y="795" class="small">black bloom</text>
+
+  <!-- 2 -->
+  <g filter="url(#softShadow)">
+    <path d="M560 320 H792 Q860 320 860 388 V620"
+          fill="none" stroke="#17233f" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.24"/>
+    <path d="M560 320 H792 Q860 320 860 388 V620"
+          fill="none" stroke="#243f74" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M560 310 H792 Q860 310 860 378 V610"
+          fill="none" stroke="#d0e4f7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+  </g>
+  <text x="690" y="760" class="label">2</text>
+
+  <!-- 3 -->
+  <g filter="url(#softShadow)">
+    <path d="M1000 320 H1232 Q1300 320 1300 388 V620"
+          fill="none" stroke="#23395a" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.26"/>
+    <path d="M1000 320 H1232 Q1300 320 1300 388 V620"
+          fill="none" stroke="#2c528d" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1000 310 H1232 Q1300 310 1300 378 V610"
+          fill="none" stroke="#d0e4f7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+  </g>
+  <text x="1130" y="760" class="label">3</text>
+
+  <!-- 4 -->
+  <g filter="url(#softShadow)">
+    <path d="M1440 320 H1672 Q1740 320 1740 388 V620"
+          fill="none" stroke="#34506d" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.28"/>
+    <path d="M1440 320 H1672 Q1740 320 1740 388 V620"
+          fill="none" stroke="#326fa8" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1440 310 H1672 Q1740 310 1740 378 V610"
+          fill="none" stroke="#d0e4f7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+  </g>
+  <text x="1570" y="760" class="label">4</text>
+  <text x="1505" y="795" class="small">baseline</text>
+
+  <!-- bottom row, also curving downward -->
+
+  <!-- 5 -->
+  <g filter="url(#softShadow)">
+    <path d="M120 140 H352 Q420 140 420 208 V440"
+          fill="none" stroke="#49659b" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+    <path d="M120 140 H352 Q420 140 420 208 V440"
+          fill="none" stroke="#3a86c5" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M120 130 H352 Q420 130 420 198 V430"
+          fill="none" stroke="#d0e4f7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+  </g>
+  <text x="250" y="520" class="label">5</text>
+
+  <!-- 6 -->
+  <g filter="url(#softShadow)">
+    <path d="M560 140 H792 Q860 140 860 208 V440"
+          fill="none" stroke="#6a8dc0" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+    <path d="M560 140 H792 Q860 140 860 208 V440"
+          fill="none" stroke="#4a9dda" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M560 130 H792 Q860 130 860 198 V430"
+          fill="none" stroke="#d0e4f7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+  </g>
+  <text x="690" y="520" class="label">6</text>
+
+  <!-- 7 -->
+  <g filter="url(#softShadow)">
+    <path d="M1000 140 H1232 Q1300 140 1300 208 V440"
+          fill="none" stroke="#d0e4f7" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+    <path d="M1000 140 H1232 Q1300 140 1300 208 V440"
+          fill="none" stroke="#5cb0eb" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1000 130 H1232 Q1300 130 1300 198 V430"
+          fill="none" stroke="#d0e4f7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.30"/>
+  </g>
+  <text x="1130" y="520" class="label">7</text>
+  <text x="1035" y="555" class="small">highlight-level bloom</text>
+</svg>

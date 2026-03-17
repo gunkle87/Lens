@@ -1,0 +1,368 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="3200" viewBox="0 0 2600 3200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1d22"/>
+      <stop offset="100%" stop-color="#101215"/>
+    </linearGradient>
+
+    <filter id="deepShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+
+    <!-- RED -->
+    <radialGradient id="red1Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8a3a3a"/>
+      <stop offset="45%" stop-color="#611818"/>
+      <stop offset="100%" stop-color="#250000"/>
+    </radialGradient>
+    <radialGradient id="red2Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b34f4f"/>
+      <stop offset="45%" stop-color="#7d2020"/>
+      <stop offset="100%" stop-color="#330000"/>
+    </radialGradient>
+    <radialGradient id="red3Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d96a6a"/>
+      <stop offset="45%" stop-color="#a83232"/>
+      <stop offset="100%" stop-color="#4a0000"/>
+    </radialGradient>
+    <radialGradient id="red4Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff8c8c"/>
+      <stop offset="45%" stop-color="#e33434"/>
+      <stop offset="100%" stop-color="#6d0000"/>
+    </radialGradient>
+    <radialGradient id="red5Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffb4b4"/>
+      <stop offset="45%" stop-color="#ff5c5c"/>
+      <stop offset="100%" stop-color="#a30000"/>
+    </radialGradient>
+    <radialGradient id="red6Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffd0d0"/>
+      <stop offset="45%" stop-color="#ff7b7b"/>
+      <stop offset="100%" stop-color="#c80000"/>
+    </radialGradient>
+    <radialGradient id="red7Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffe6e6"/>
+      <stop offset="45%" stop-color="#ff9d9d"/>
+      <stop offset="100%" stop-color="#eb1a1a"/>
+    </radialGradient>
+
+    <!-- BLUE -->
+    <radialGradient id="blue1Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3a4f8a"/>
+      <stop offset="45%" stop-color="#182d61"/>
+      <stop offset="100%" stop-color="#000f25"/>
+    </radialGradient>
+    <radialGradient id="blue2Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4f6eb3"/>
+      <stop offset="45%" stop-color="#203f7d"/>
+      <stop offset="100%" stop-color="#001633"/>
+    </radialGradient>
+    <radialGradient id="blue3Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6a8dd9"/>
+      <stop offset="45%" stop-color="#325ca8"/>
+      <stop offset="100%" stop-color="#001f4a"/>
+    </radialGradient>
+    <radialGradient id="blue4Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8cb5ff"/>
+      <stop offset="45%" stop-color="#3473e3"/>
+      <stop offset="100%" stop-color="#002f6d"/>
+    </radialGradient>
+    <radialGradient id="blue5Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b4ceff"/>
+      <stop offset="45%" stop-color="#5c96ff"/>
+      <stop offset="100%" stop-color="#004ca3"/>
+    </radialGradient>
+    <radialGradient id="blue6Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d0e0ff"/>
+      <stop offset="45%" stop-color="#7bb0ff"/>
+      <stop offset="100%" stop-color="#0062c8"/>
+    </radialGradient>
+    <radialGradient id="blue7Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e6f0ff"/>
+      <stop offset="45%" stop-color="#9dc8ff"/>
+      <stop offset="100%" stop-color="#1a7ceb"/>
+    </radialGradient>
+
+    <!-- WHITE -->
+    <radialGradient id="white1Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8a8a8a"/>
+      <stop offset="45%" stop-color="#616161"/>
+      <stop offset="100%" stop-color="#252525"/>
+    </radialGradient>
+    <radialGradient id="white2Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b3b3b3"/>
+      <stop offset="45%" stop-color="#7d7d7d"/>
+      <stop offset="100%" stop-color="#333333"/>
+    </radialGradient>
+    <radialGradient id="white3Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d9d9d9"/>
+      <stop offset="45%" stop-color="#a8a8a8"/>
+      <stop offset="100%" stop-color="#4a4a4a"/>
+    </radialGradient>
+    <radialGradient id="white4Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="45%" stop-color="#cfcfcf"/>
+      <stop offset="100%" stop-color="#6d6d6d"/>
+    </radialGradient>
+    <radialGradient id="white5Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fafafa"/>
+      <stop offset="45%" stop-color="#e6e6e6"/>
+      <stop offset="100%" stop-color="#a3a3a3"/>
+    </radialGradient>
+    <radialGradient id="white6Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#f2f2f2"/>
+      <stop offset="100%" stop-color="#c8c8c8"/>
+    </radialGradient>
+    <radialGradient id="white7Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ebebeb"/>
+    </radialGradient>
+
+    <!-- GREEN -->
+    <radialGradient id="green1Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3a8a4a"/>
+      <stop offset="45%" stop-color="#18612a"/>
+      <stop offset="100%" stop-color="#00250b"/>
+    </radialGradient>
+    <radialGradient id="green2Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4fb365"/>
+      <stop offset="45%" stop-color="#207d38"/>
+      <stop offset="100%" stop-color="#003313"/>
+    </radialGradient>
+    <radialGradient id="green3Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6ad983"/>
+      <stop offset="45%" stop-color="#32a84f"/>
+      <stop offset="100%" stop-color="#004a1f"/>
+    </radialGradient>
+    <radialGradient id="green4Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8cff9d"/>
+      <stop offset="45%" stop-color="#34e35e"/>
+      <stop offset="100%" stop-color="#006d2b"/>
+    </radialGradient>
+    <radialGradient id="green5Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b4ffbf"/>
+      <stop offset="45%" stop-color="#5cff7d"/>
+      <stop offset="100%" stop-color="#00a33c"/>
+    </radialGradient>
+    <radialGradient id="green6Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d0ffd6"/>
+      <stop offset="45%" stop-color="#7bff95"/>
+      <stop offset="100%" stop-color="#00c84c"/>
+    </radialGradient>
+    <radialGradient id="green7Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e6ffea"/>
+      <stop offset="45%" stop-color="#9dffb1"/>
+      <stop offset="100%" stop-color="#1aeb5f"/>
+    </radialGradient>
+
+    <!-- YELLOW -->
+    <radialGradient id="yellow1Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8a843a"/>
+      <stop offset="45%" stop-color="#615b18"/>
+      <stop offset="100%" stop-color="#252200"/>
+    </radialGradient>
+    <radialGradient id="yellow2Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b3aa4f"/>
+      <stop offset="45%" stop-color="#7d7320"/>
+      <stop offset="100%" stop-color="#332f00"/>
+    </radialGradient>
+    <radialGradient id="yellow3Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d9cc6a"/>
+      <stop offset="45%" stop-color="#a89332"/>
+      <stop offset="100%" stop-color="#4a4300"/>
+    </radialGradient>
+    <radialGradient id="yellow4Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff28c"/>
+      <stop offset="45%" stop-color="#e3d434"/>
+      <stop offset="100%" stop-color="#6d6300"/>
+    </radialGradient>
+    <radialGradient id="yellow5Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff8b4"/>
+      <stop offset="45%" stop-color="#ffed5c"/>
+      <stop offset="100%" stop-color="#a39500"/>
+    </radialGradient>
+    <radialGradient id="yellow6Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fffcd0"/>
+      <stop offset="45%" stop-color="#fff47b"/>
+      <stop offset="100%" stop-color="#c8b800"/>
+    </radialGradient>
+    <radialGradient id="yellow7Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fffde6"/>
+      <stop offset="45%" stop-color="#fff89d"/>
+      <stop offset="100%" stop-color="#ebd81a"/>
+    </radialGradient>
+
+    <!-- ORANGE -->
+    <radialGradient id="orange1Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8a5a3a"/>
+      <stop offset="45%" stop-color="#613618"/>
+      <stop offset="100%" stop-color="#251000"/>
+    </radialGradient>
+    <radialGradient id="orange2Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b3734f"/>
+      <stop offset="45%" stop-color="#7d4320"/>
+      <stop offset="100%" stop-color="#331600"/>
+    </radialGradient>
+    <radialGradient id="orange3Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d9936a"/>
+      <stop offset="45%" stop-color="#a85d32"/>
+      <stop offset="100%" stop-color="#4a2000"/>
+    </radialGradient>
+    <radialGradient id="orange4Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffb58c"/>
+      <stop offset="45%" stop-color="#e37a34"/>
+      <stop offset="100%" stop-color="#6d3000"/>
+    </radialGradient>
+    <radialGradient id="orange5Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffd0b4"/>
+      <stop offset="45%" stop-color="#ff9b5c"/>
+      <stop offset="100%" stop-color="#a34900"/>
+    </radialGradient>
+    <radialGradient id="orange6Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffe2d0"/>
+      <stop offset="45%" stop-color="#ffb47b"/>
+      <stop offset="100%" stop-color="#c85f00"/>
+    </radialGradient>
+    <radialGradient id="orange7Grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff0e6"/>
+      <stop offset="45%" stop-color="#ffc89d"/>
+      <stop offset="100%" stop-color="#eb781a"/>
+    </radialGradient>
+
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; fill: #f2f4f7; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #c8d0d8; }
+      .rowlabel { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #f2f4f7; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #c8d0d8; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #aeb8c2; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="2600" height="3200" fill="url(#bgGrad)"/>
+
+  <text x="70" y="70" class="title">LED Brightness Ramps - Multiple Colors</text>
+  <text x="70" y="110" class="subtitle">Seven states each for red, blue, white, green, yellow, and orange. All use the same dome language and differ only by color and brightness.</text>
+
+  <!-- ================= RED ================= -->
+  <text x="70" y="220" class="rowlabel">RED</text>
+  <text x="70" y="255" class="small">3 = dimmed unlit, 4 = original unlit, 5 = locked lit</text>
+
+  <g filter="url(#deepShadow)">
+    <circle cx="260" cy="430" r="110" fill="url(#red1Grad)" stroke="#250000" stroke-width="8"/><circle cx="220" cy="385" r="36" fill="white" opacity="0.20"/>
+    <circle cx="580" cy="430" r="110" fill="url(#red2Grad)" stroke="#330000" stroke-width="8"/><circle cx="540" cy="385" r="36" fill="white" opacity="0.21"/>
+    <circle cx="900" cy="430" r="110" fill="url(#red3Grad)" stroke="#4a0000" stroke-width="8"/><circle cx="860" cy="385" r="36" fill="white" opacity="0.22"/>
+    <circle cx="1220" cy="430" r="110" fill="url(#red4Grad)" stroke="#6d0000" stroke-width="8"/><circle cx="1180" cy="385" r="36" fill="white" opacity="0.24"/>
+    <circle cx="1540" cy="430" r="110" fill="url(#red5Grad)" stroke="#7a0000" stroke-width="8"/><circle cx="1500" cy="385" r="36" fill="white" opacity="0.20"/>
+    <circle cx="1860" cy="430" r="110" fill="url(#red6Grad)" stroke="#8f0000" stroke-width="8"/><circle cx="1820" cy="385" r="36" fill="white" opacity="0.18"/>
+    <circle cx="2180" cy="430" r="110" fill="url(#red7Grad)" stroke="#a80000" stroke-width="8"/><circle cx="2140" cy="385" r="36" fill="white" opacity="0.17"/>
+  </g>
+  <text x="250" y="620" class="num">1</text>
+  <text x="570" y="620" class="num">2</text>
+  <text x="890" y="620" class="num">3</text>
+  <text x="1210" y="620" class="num">4</text>
+  <text x="1530" y="620" class="num">5</text>
+  <text x="1850" y="620" class="num">6</text>
+  <text x="2170" y="620" class="num">7</text>
+
+  <!-- ================= BLUE ================= -->
+  <text x="70" y="760" class="rowlabel">BLUE</text>
+
+  <g filter="url(#deepShadow)">
+    <circle cx="260" cy="970" r="110" fill="url(#blue1Grad)" stroke="#000f25" stroke-width="8"/><circle cx="220" cy="925" r="36" fill="white" opacity="0.20"/>
+    <circle cx="580" cy="970" r="110" fill="url(#blue2Grad)" stroke="#001633" stroke-width="8"/><circle cx="540" cy="925" r="36" fill="white" opacity="0.21"/>
+    <circle cx="900" cy="970" r="110" fill="url(#blue3Grad)" stroke="#001f4a" stroke-width="8"/><circle cx="860" cy="925" r="36" fill="white" opacity="0.22"/>
+    <circle cx="1220" cy="970" r="110" fill="url(#blue4Grad)" stroke="#002f6d" stroke-width="8"/><circle cx="1180" cy="925" r="36" fill="white" opacity="0.24"/>
+    <circle cx="1540" cy="970" r="110" fill="url(#blue5Grad)" stroke="#004ca3" stroke-width="8"/><circle cx="1500" cy="925" r="36" fill="white" opacity="0.20"/>
+    <circle cx="1860" cy="970" r="110" fill="url(#blue6Grad)" stroke="#0062c8" stroke-width="8"/><circle cx="1820" cy="925" r="36" fill="white" opacity="0.18"/>
+    <circle cx="2180" cy="970" r="110" fill="url(#blue7Grad)" stroke="#1a7ceb" stroke-width="8"/><circle cx="2140" cy="925" r="36" fill="white" opacity="0.17"/>
+  </g>
+  <text x="250" y="1160" class="num">1</text>
+  <text x="570" y="1160" class="num">2</text>
+  <text x="890" y="1160" class="num">3</text>
+  <text x="1210" y="1160" class="num">4</text>
+  <text x="1530" y="1160" class="num">5</text>
+  <text x="1850" y="1160" class="num">6</text>
+  <text x="2170" y="1160" class="num">7</text>
+
+  <!-- ================= WHITE ================= -->
+  <text x="70" y="1300" class="rowlabel">WHITE</text>
+
+  <g filter="url(#deepShadow)">
+    <circle cx="260" cy="1510" r="110" fill="url(#white1Grad)" stroke="#252525" stroke-width="8"/><circle cx="220" cy="1465" r="36" fill="white" opacity="0.20"/>
+    <circle cx="580" cy="1510" r="110" fill="url(#white2Grad)" stroke="#333333" stroke-width="8"/><circle cx="540" cy="1465" r="36" fill="white" opacity="0.21"/>
+    <circle cx="900" cy="1510" r="110" fill="url(#white3Grad)" stroke="#4a4a4a" stroke-width="8"/><circle cx="860" cy="1465" r="36" fill="white" opacity="0.22"/>
+    <circle cx="1220" cy="1510" r="110" fill="url(#white4Grad)" stroke="#6d6d6d" stroke-width="8"/><circle cx="1180" cy="1465" r="36" fill="white" opacity="0.24"/>
+    <circle cx="1540" cy="1510" r="110" fill="url(#white5Grad)" stroke="#a3a3a3" stroke-width="8"/><circle cx="1500" cy="1465" r="36" fill="white" opacity="0.20"/>
+    <circle cx="1860" cy="1510" r="110" fill="url(#white6Grad)" stroke="#c8c8c8" stroke-width="8"/><circle cx="1820" cy="1465" r="36" fill="white" opacity="0.18"/>
+    <circle cx="2180" cy="1510" r="110" fill="url(#white7Grad)" stroke="#ebebeb" stroke-width="8"/><circle cx="2140" cy="1465" r="36" fill="white" opacity="0.17"/>
+  </g>
+  <text x="250" y="1700" class="num">1</text>
+  <text x="570" y="1700" class="num">2</text>
+  <text x="890" y="1700" class="num">3</text>
+  <text x="1210" y="1700" class="num">4</text>
+  <text x="1530" y="1700" class="num">5</text>
+  <text x="1850" y="1700" class="num">6</text>
+  <text x="2170" y="1700" class="num">7</text>
+
+  <!-- ================= GREEN ================= -->
+  <text x="70" y="1840" class="rowlabel">GREEN</text>
+
+  <g filter="url(#deepShadow)">
+    <circle cx="260" cy="2050" r="110" fill="url(#green1Grad)" stroke="#00250b" stroke-width="8"/><circle cx="220" cy="2005" r="36" fill="white" opacity="0.20"/>
+    <circle cx="580" cy="2050" r="110" fill="url(#green2Grad)" stroke="#003313" stroke-width="8"/><circle cx="540" cy="2005" r="36" fill="white" opacity="0.21"/>
+    <circle cx="900" cy="2050" r="110" fill="url(#green3Grad)" stroke="#004a1f" stroke-width="8"/><circle cx="860" cy="2005" r="36" fill="white" opacity="0.22"/>
+    <circle cx="1220" cy="2050" r="110" fill="url(#green4Grad)" stroke="#006d2b" stroke-width="8"/><circle cx="1180" cy="2005" r="36" fill="white" opacity="0.24"/>
+    <circle cx="1540" cy="2050" r="110" fill="url(#green5Grad)" stroke="#00a33c" stroke-width="8"/><circle cx="1500" cy="2005" r="36" fill="white" opacity="0.20"/>
+    <circle cx="1860" cy="2050" r="110" fill="url(#green6Grad)" stroke="#00c84c" stroke-width="8"/><circle cx="1820" cy="2005" r="36" fill="white" opacity="0.18"/>
+    <circle cx="2180" cy="2050" r="110" fill="url(#green7Grad)" stroke="#1aeb5f" stroke-width="8"/><circle cx="2140" cy="2005" r="36" fill="white" opacity="0.17"/>
+  </g>
+  <text x="250" y="2240" class="num">1</text>
+  <text x="570" y="2240" class="num">2</text>
+  <text x="890" y="2240" class="num">3</text>
+  <text x="1210" y="2240" class="num">4</text>
+  <text x="1530" y="2240" class="num">5</text>
+  <text x="1850" y="2240" class="num">6</text>
+  <text x="2170" y="2240" class="num">7</text>
+
+  <!-- ================= YELLOW ================= -->
+  <text x="70" y="2380" class="rowlabel">YELLOW</text>
+
+  <g filter="url(#deepShadow)">
+    <circle cx="260" cy="2590" r="110" fill="url(#yellow1Grad)" stroke="#252200" stroke-width="8"/><circle cx="220" cy="2545" r="36" fill="white" opacity="0.20"/>
+    <circle cx="580" cy="2590" r="110" fill="url(#yellow2Grad)" stroke="#332f00" stroke-width="8"/><circle cx="540" cy="2545" r="36" fill="white" opacity="0.21"/>
+    <circle cx="900" cy="2590" r="110" fill="url(#yellow3Grad)" stroke="#4a4300" stroke-width="8"/><circle cx="860" cy="2545" r="36" fill="white" opacity="0.22"/>
+    <circle cx="1220" cy="2590" r="110" fill="url(#yellow4Grad)" stroke="#6d6300" stroke-width="8"/><circle cx="1180" cy="2545" r="36" fill="white" opacity="0.24"/>
+    <circle cx="1540" cy="2590" r="110" fill="url(#yellow5Grad)" stroke="#a39500" stroke-width="8"/><circle cx="1500" cy="2545" r="36" fill="white" opacity="0.20"/>
+    <circle cx="1860" cy="2590" r="110" fill="url(#yellow6Grad)" stroke="#c8b800" stroke-width="8"/><circle cx="1820" cy="2545" r="36" fill="white" opacity="0.18"/>
+    <circle cx="2180" cy="2590" r="110" fill="url(#yellow7Grad)" stroke="#ebd81a" stroke-width="8"/><circle cx="2140" cy="2545" r="36" fill="white" opacity="0.17"/>
+  </g>
+  <text x="250" y="2780" class="num">1</text>
+  <text x="570" y="2780" class="num">2</text>
+  <text x="890" y="2780" class="num">3</text>
+  <text x="1210" y="2780" class="num">4</text>
+  <text x="1530" y="2780" class="num">5</text>
+  <text x="1850" y="2780" class="num">6</text>
+  <text x="2170" y="2780" class="num">7</text>
+
+  <!-- ================= ORANGE ================= -->
+  <text x="70" y="2920" class="rowlabel">ORANGE</text>
+
+  <g filter="url(#deepShadow)">
+    <circle cx="260" cy="3130" r="110" fill="url(#orange1Grad)" stroke="#251000" stroke-width="8"/><circle cx="220" cy="3085" r="36" fill="white" opacity="0.20"/>
+    <circle cx="580" cy="3130" r="110" fill="url(#orange2Grad)" stroke="#331600" stroke-width="8"/><circle cx="540" cy="3085" r="36" fill="white" opacity="0.21"/>
+    <circle cx="900" cy="3130" r="110" fill="url(#orange3Grad)" stroke="#4a2000" stroke-width="8"/><circle cx="860" cy="3085" r="36" fill="white" opacity="0.22"/>
+    <circle cx="1220" cy="3130" r="110" fill="url(#orange4Grad)" stroke="#6d3000" stroke-width="8"/><circle cx="1180" cy="3085" r="36" fill="white" opacity="0.24"/>
+    <circle cx="1540" cy="3130" r="110" fill="url(#orange5Grad)" stroke="#a34900" stroke-width="8"/><circle cx="1500" cy="3085" r="36" fill="white" opacity="0.20"/>
+    <circle cx="1860" cy="3130" r="110" fill="url(#orange6Grad)" stroke="#c85f00" stroke-width="8"/><circle cx="1820" cy="3085" r="36" fill="white" opacity="0.18"/>
+    <circle cx="2180" cy="3130" r="110" fill="url(#orange7Grad)" stroke="#eb781a" stroke-width="8"/><circle cx="2140" cy="3085" r="36" fill="white" opacity="0.17"/>
+  </g>
+  <text x="250" y="3190" class="num">1</text>
+  <text x="570" y="3190" class="num">2</text>
+  <text x="890" y="3190" class="num">3</text>
+  <text x="1210" y="3190" class="num">4</text>
+  <text x="1530" y="3190" class="num">5</text>
+  <text x="1850" y="3190" class="num">6</text>
+  <text x="2170" y="3190" class="num">7</text>
+</svg>
