@@ -1,0 +1,16 @@
+# Build directories and generated files
+build/
+cmake-build-*/
+
+# CMake-generated artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
