@@ -2,6 +2,10 @@
 
 This document defines the complete task breakdown for Phase 1 of the Lens framework. The goal is to establish the architectural substrate and core capabilities required to support the first 30 projects of the "Signals & Gates" logic simulation.
 
+All implementation must follow the **Data-Oriented Programming Model** as specified in [**docs/PROGRAMMING_MODEL.md**](../PROGRAMMING_MODEL.md). 
+
+**Substrate Core Implementation must be written in C only.** TypeScript is not an accepted implementation language for this project's core.
+
 # Task 01
 Formalize the Pillar 1 Render Core for high-performance execution of visual primitives (RECT, CIRCLE, PATH, TEXT) including hierarchical transform resolution.
 

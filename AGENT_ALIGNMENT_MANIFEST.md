@@ -44,9 +44,22 @@ Lens is not:
 - an enterprise UI
 - a general-purpose desktop shell
 
-## Hard Constraints
+## HARD CONSTRAINTS: ARCHITECTURE & PROGRAMMING MODEL
 
 These are mandatory.
+
+**0. Lens must use a Data-Oriented Programming Model.**
+- Procedural systems, explicit data flow, and table-based state management are required.
+- Do not build the system around deep class hierarchies or classical OOP.
+- Composition over inheritance; plain structs over deep class trees.
+- Every major subsystem must operate as a deterministic pass over data.
+- Refer to [**docs/PROGRAMMING_MODEL.md**](docs/PROGRAMMING_MODEL.md) for full compliance rules.
+
+**0.1 Lens has a strict Language Policy.**
+- **Core implementation must be in C.** (Render, Grammar, Scene, etc.)
+- **No TypeScript code may be implemented** in core, runtime, or engine-facing layers.
+- **Java** for the application/UI layer.
+- **Python** for the tooling/automation language.
 
 1. Lens must be layered.
 - Rendering, visual description, scene composition, layout, interaction, engine communication, and shell integration must remain distinct layers.

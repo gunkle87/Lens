@@ -2,6 +2,21 @@
 
 This document defines the strict boundaries for any agent working on the Lens project. These rules ensure that all actions are explicitly authorized and follow the project's quality and communication standards.
 
+## 0. PROGRAMMING MODEL MANDATE
+
+**Lens follows a Data-Oriented Design (DOD) style by default.** Procedural systems, explicit data flow, and table-based state management are required over classical OOP or deep inheritance.
+
+Rule: Refer to [**PROGRAMMING_MODEL.md**](PROGRAMMING_MODEL.md) for detailed architectural constraints and implementation style. This mandate applies regardless of the chosen implementation language.
+
+## 0.1 LANGUAGE POLICY
+
+**The implementation-language policy is strict and binary.**
+
+1.  **Core Systems (C Only)**: All core architectural logic (Render, Grammar, Scene, etc.) must be written in **C**.
+2.  **No TypeScript**: TypeScript is not an accepted implementation language for this project.
+3.  **Application/UI Packages (Java)**: Preferred companion language for UI structures.
+4.  **Tooling & Support (Python)**: Preferred language for automation and support.
+
 ## 1. HIERARCHY OF AUTHORITY
 
 Every turn must follow this source-of-truth hierarchy:

@@ -14,4 +14,5 @@ Welcome to the Lens project documentation. This repository contains the specific
 ## Startup & Guidelines
 - [Canonical Alignment](../../AGENT_ALIGNMENT_MANIFEST.md): The primary source of truth for planning and mission alignment.
 - [Agent Rules & Constraints](RULES.md): Strict boundaries for agent behavior and code provenance.
+- [Programming Model](PROGRAMMING_MODEL.md): Core Data-Oriented Design (DOD) requirements and philosophy.
 - [Test Protocol](TEST_PROTOCOL.md): Rules for ensuring framework correctness and pillar stability.
