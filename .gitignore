@@ -1,0 +1,7 @@
+*.exe
+*.o
+*.obj
+*.out
+.DS_Store
+*.tmp
+verify_core
