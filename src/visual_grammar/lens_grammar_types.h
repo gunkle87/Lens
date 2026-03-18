@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "../render_core/lens_math.h"
+#include "../logic_link/lens_topology_types.h"
 
 // Customization Tiers (from docs/RULES.md)
 typedef enum {
@@ -73,6 +74,10 @@ typedef struct {
 
     LensGrammarShape shapes[LENS_MAX_SHAPES];
     uint32_t shape_count;
+
+#define LENS_MAX_PORTS 16
+    LensPortDef ports[LENS_MAX_PORTS];
+    uint32_t port_count;
 
     LensCustomizationTier source_tier;
 } LensComponentDef;

@@ -38,9 +38,21 @@ typedef struct {
     LensParameterOverride overrides[LENS_MAX_OVERRIDES];
 } LensComponentInstanceData;
 
+#define LENS_MAX_TRACE_VERTICES 32
+
 typedef struct {
-    LensUUID start_port_id;
-    LensUUID end_port_id;
+    LensUUID source_node_id;
+    char source_port[32];
+    
+    LensUUID dest_node_id;
+    char dest_port[32];
+    
+    char style_id[64];
+    
+    struct {
+        float x, y;
+    } vertices[LENS_MAX_TRACE_VERTICES];
+    uint32_t vertex_count;
 } LensTraceData;
 
 typedef struct {
