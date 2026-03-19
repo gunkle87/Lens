@@ -95,13 +95,13 @@ Brief: Implement clip/scissor resolution with deterministic inheritance.
 
 Brief: Implement stable draw ordering by layer + explicit order key.
 
-- [ ] Implementation complete — `YYYY-MM-DD HH:MM TZ`
-- [ ] Tests passed (current + previous = 100%) —
-      `YYYY-MM-DD HH:MM TZ` — `runner: <COMMAND>`
-- [ ] Test evidence recorded (scope, totals, failed IDs, reruns) —
-      `YYYY-MM-DD HH:MM TZ`
-- [ ] Audit passed (100%, blockers=0, non-blockers=0) —
-      `YYYY-MM-DD HH:MM TZ`
+- [x] Implementation complete — `2026-03-18 20:37 CDT`
+- [x] Tests passed (current + previous = 100%) —
+      `2026-03-18 20:37 CDT` — `runner: python testing/test_runner.py --mode pillar --pillar 1`
+- [x] Test evidence recorded (scope, totals, failed IDs, reruns) —
+      `2026-03-18 20:37 CDT` — `single: python testing/test_runner.py --mode single --test test_pillar_1_ordering_resolve_pass.py => total=1 passed=1 failed=0 failed_ids=none; pillar_1: python testing/test_runner.py --mode pillar --pillar 1 => total=5 passed=5 failed=0 failed_ids=none; reruns=none`
+- [x] Audit passed (100%, blockers=0, non-blockers=0) —
+      `2026-03-18 20:42 CDT`
 - [ ] Local commit created — `YYYY-MM-DD HH:MM TZ` — `commit: <HASH>`
 - [ ] Effort rating recorded (user-reported) —
       `YYYY-MM-DD HH:MM TZ` — `rating: <TOO_EASY|EASY|PERFECT|HARD|TOO_HARD>`
