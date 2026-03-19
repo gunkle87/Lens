@@ -80,14 +80,20 @@ At completion, report only:
 4. Open blockers/non-blockers
 5. Next handoff recommendation
 
+Test reporting is mandatory:
+- Include explicit statement that current + previous required tests are 100% green.
+- Include both runner commands and totals required for tracker evidence.
+
 ## Tracker Update Policy
 - Update tracker only for this task.
-- Mark only the **Implementation complete** checkbox as `[x]` when implementation is done.
-- Do not mark tests/audit/commit checkboxes in this directive.
+- Mark **Implementation complete** as `[x]` when implementation is done.
+- Mark **Tests passed (current + previous = 100%)** as `[x]` after canonical runner proof.
+- Mark **Test evidence recorded** as `[x]` and fill command/scope/totals/failed IDs/reruns fields.
+- Do not mark audit/commit checkboxes in this directive.
 
 ## Completion Condition
 - Implementation is complete and reported.
-- Tracker implementation checkbox for this task is marked `[x]`.
+- Tracker implementation + tests passed + test evidence checkboxes for this task are marked `[x]`.
 ```
 
 ---
@@ -123,11 +129,7 @@ Copy and fill this template for each task audit.
    - Test evidence recorded checkbox state is complete where required.
    - Required command/result evidence is present.
 3. Verify audit scope file list is present.
-4. If prerequisites are missing due to documentation-only gaps, and there are
-   no implementation/code blockers, treat the issue as documentation
-   correction work (non-blocking to code correctness).
-5. Do not require ceremonial re-audits after documentation-only corrections
-   when no code changes were made and no code blockers were found.
+4. If any prerequisite is missing, stop and report `FAIL`.
 
 ## Audit Scope (Strict)
 - Audit only files touched by prior implementation:
@@ -159,7 +161,7 @@ Copy and fill this template for each task audit.
 Report using this exact structure:
 1. Verdict: `PASS` or `FAIL`
 2. Blockers (must be empty for PASS)
-3. Non-blockers
+3. Non-blockers (must be empty for PASS)
 4. File-by-file findings
 5. Required fixes (if FAIL)
 6. Recommended next step
@@ -169,9 +171,8 @@ Report using this exact structure:
 - If verdict is `PASS`, mark only the **Audit passed** checkbox for this task as `[x]`.
 - If verdict is `FAIL`, do not mark audit checkbox.
 
-Note:
-- Documentation-only gaps may be recorded as non-blockers when code correctness
-  is already verified.
+Hard rule:
+- If any blocker or non-blocker is reported, verdict must be `FAIL`.
 
 ## Completion Condition
 - Audit report delivered.
