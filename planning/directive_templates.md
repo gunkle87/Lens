@@ -155,7 +155,13 @@ Copy and fill this template for each task audit.
 4. Naming/style compliance (`RULES.md`)
 5. Boundary compliance (layer intent + no forbidden coupling)
 6. Test evidence validity (runner usage, results, current+previous 100%)
-7. Regression risk in touched files
+7. Validity of each newly introduced/modified test in scope:
+   - test actually executes assertions/behavior (no stubbed "always pass" paths)
+   - canonical runner output reflects real execution outcomes
+   - any unavoidable direct core attachment is registered in
+     `testing/TEST_CORE_ATTACHMENT_EXCEPTIONS.md` and marked in code with
+     explicit removal steps
+8. Regression risk in touched files
 
 ## Required Reporting Policy
 Report using this exact structure:
