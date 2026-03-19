@@ -57,9 +57,9 @@ stable indexing.
       `2026-03-18 19:24 CDT` — `single: python testing/test_runner.py --mode single --test test_pillar_1_command_input_buffer.py => total=1 passed=1 failed=0 failed_ids=none; pillar_1: python testing/test_runner.py --mode pillar --pillar 1 => total=2 passed=2 failed=0 failed_ids=none; reruns=none`
 - [x] Audit passed (100%, blockers=0, non-blockers=0) —
       `2026-03-18 19:24 CDT` — `adjudicated from prior audit after documentation correction (no code blockers)`
-- [ ] Local commit created — `YYYY-MM-DD HH:MM TZ` — `commit: <HASH>`
-- [ ] Effort rating recorded (user-reported) —
-      `YYYY-MM-DD HH:MM TZ` — `rating: <TOO_EASY|EASY|PERFECT|HARD|TOO_HARD>`
+- [x] Local commit created — `2026-03-18 19:28 CDT` — `commit: de5fbff`
+- [x] Effort rating recorded (user-reported) —
+      `2026-03-18 19:28 CDT` — `rating: EASY`
 
 ## Task 1.3 — Transform Resolve Pass
 
