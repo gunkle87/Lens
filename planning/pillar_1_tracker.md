@@ -72,9 +72,9 @@ Brief: Implement transform resolution into render-ready records.
       `2026-03-18 19:48 CDT` — `single: python testing/test_runner.py --mode single --test test_pillar_1_transform_resolve_pass.py => total=1 passed=1 failed=0 failed_ids=none; pillar_1: python testing/test_runner.py --mode pillar --pillar 1 => total=3 passed=3 failed=0 failed_ids=none; reruns=none`
 - [x] Audit passed (100%, blockers=0, non-blockers=0) —
       `2026-03-18 20:01 CDT`
-- [ ] Local commit created — `YYYY-MM-DD HH:MM TZ` — `commit: <HASH>`
-- [ ] Effort rating recorded (user-reported) —
-      `YYYY-MM-DD HH:MM TZ` — `rating: <TOO_EASY|EASY|PERFECT|HARD|TOO_HARD>`
+- [x] Local commit created — `2026-03-18 20:13 CDT` — `commit: 87877ba`
+- [x] Effort rating recorded (user-reported) —
+      `2026-03-18 20:13 CDT` — `rating: EASY`
 
 ## Task 1.4 — Clip Resolve Pass
 
