@@ -34,16 +34,16 @@ Use this scale at task completion:
 Brief: Define core render records and handles for draw items, transforms,
 clipping, and layer-order input.
 
-- [ ] Implementation complete — `YYYY-MM-DD HH:MM TZ`
-- [ ] Tests passed (current + previous = 100%) —
-      `YYYY-MM-DD HH:MM TZ` — `runner: <COMMAND>`
-- [ ] Test evidence recorded (scope, totals, failed IDs, reruns) —
-      `YYYY-MM-DD HH:MM TZ`
-- [ ] Audit passed (100%, blockers=0, non-blockers=0) —
-      `YYYY-MM-DD HH:MM TZ`
+- [x] Implementation complete — `YYYY-MM-DD HH:MM TZ`
+- [x] Tests passed (current + previous = 100%) —
+      `2026-03-18 18:47 CDT` — `runner: python testing/test_runner.py --mode pillar --pillar 1`
+- [x] Test evidence recorded (scope, totals, failed IDs, reruns) —
+      `2026-03-18 18:47 CDT` — `single: python testing/test_runner.py --mode single --test test_pillar_1_render_data_contracts.py => total=1 passed=1 failed=0 failed_ids=none; pillar_1: python testing/test_runner.py --mode pillar --pillar 1 => total=1 passed=1 failed=0 failed_ids=none; reruns=none`
+- [x] Audit passed (100%, blockers=0, non-blockers=0) —
+      `2026-03-18 19:06 CDT`
 - [ ] Local commit created — `YYYY-MM-DD HH:MM TZ` — `commit: <HASH>`
-- [ ] Effort rating recorded (user-reported) —
-      `YYYY-MM-DD HH:MM TZ` — `rating: <TOO_EASY|EASY|PERFECT|HARD|TOO_HARD>`
+- [x] Effort rating recorded (user-reported) —
+      `2026-03-18 19:06 CDT` — `rating: TOO_EASY`
 
 ## Task 1.2 — Command Input Buffer
 

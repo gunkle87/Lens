@@ -104,19 +104,30 @@ Copy and fill this template for each task audit.
 - Pillar: `<pillar>`
 - Task ID: `<task id>`
 - Tracker File: `<path>`
-- Prior Implementation Report: `<path or message reference>`
+
+## Optional Context Inputs
+- Prior implementation report (if available)
+- Prior record-correction note (if available)
 
 ## Required Reading (Must Read In Order)
 1. `RULES.md`
 2. `BUILD_PROTOCOL.md`
 3. `testing/TEST_PROTOCOL.md`
 4. `<pillar-specific tracker file>`
-5. `<prior implementation report>`
 
 ## Pre-Execution Gate (Required)
 1. Verify target task implementation checkbox is `[x]`.
-2. Verify audit scope file list is present.
-3. If prerequisites are missing, stop and report.
+2. Verify previous required task documentation is complete in the tracker
+   before auditing:
+   - Tests passed checkbox state is complete where required.
+   - Test evidence recorded checkbox state is complete where required.
+   - Required command/result evidence is present.
+3. Verify audit scope file list is present.
+4. If prerequisites are missing due to documentation-only gaps, and there are
+   no implementation/code blockers, treat the issue as documentation
+   correction work (non-blocking to code correctness).
+5. Do not require ceremonial re-audits after documentation-only corrections
+   when no code changes were made and no code blockers were found.
 
 ## Audit Scope (Strict)
 - Audit only files touched by prior implementation:
@@ -137,11 +148,12 @@ Copy and fill this template for each task audit.
 
 ## Audit Checks
 1. Scope compliance
-2. Functional correctness for task objective
-3. Naming/style compliance (`RULES.md`)
-4. Boundary compliance (layer intent + no forbidden coupling)
-5. Test evidence validity (runner usage, results, current+previous 100%)
-6. Regression risk in touched files
+2. Documentation completeness compliance before audit progression
+3. Functional correctness for task objective
+4. Naming/style compliance (`RULES.md`)
+5. Boundary compliance (layer intent + no forbidden coupling)
+6. Test evidence validity (runner usage, results, current+previous 100%)
+7. Regression risk in touched files
 
 ## Required Reporting Policy
 Report using this exact structure:
@@ -156,6 +168,10 @@ Report using this exact structure:
 - Do not alter implementation checkbox state.
 - If verdict is `PASS`, mark only the **Audit passed** checkbox for this task as `[x]`.
 - If verdict is `FAIL`, do not mark audit checkbox.
+
+Note:
+- Documentation-only gaps may be recorded as non-blockers when code correctness
+  is already verified.
 
 ## Completion Condition
 - Audit report delivered.
