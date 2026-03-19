@@ -175,7 +175,10 @@ class TransformResolvePassTests(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         if hasattr(cls, "library"):
-            ctypes.WinDLL("kernel32", use_last_error=True).FreeLibrary(cls.library._handle)
+            kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+            kernel32.FreeLibrary.argtypes = [ctypes.c_void_p]
+            kernel32.FreeLibrary.restype = ctypes.c_int
+            kernel32.FreeLibrary(ctypes.c_void_p(cls.library._handle))
         cls.temp_dir.cleanup()
 
     @classmethod
