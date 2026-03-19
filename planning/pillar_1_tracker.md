@@ -125,13 +125,13 @@ Brief: Convert resolved commands into backend-ready primitive batches.
 
 Brief: Implement bounded submit/present backend interface.
 
-- [ ] Implementation complete — `YYYY-MM-DD HH:MM TZ`
-- [ ] Tests passed (current + previous = 100%) —
-      `YYYY-MM-DD HH:MM TZ` — `runner: <COMMAND>`
-- [ ] Test evidence recorded (scope, totals, failed IDs, reruns) —
-      `YYYY-MM-DD HH:MM TZ`
-- [ ] Audit passed (100%, blockers=0, non-blockers=0) —
-      `YYYY-MM-DD HH:MM TZ`
+- [x] Implementation complete — `2026-03-18 20:59 CDT`
+- [x] Tests passed (current + previous = 100%) —
+      `2026-03-18 20:59 CDT` — `runner: python testing/test_runner.py --mode pillar --pillar 1`
+- [x] Test evidence recorded (scope, totals, failed IDs, reruns) —
+      `2026-03-18 20:59 CDT` — `single: python testing/test_runner.py --mode single --test test_pillar_1_backend_boundary_interface.py => total=1 passed=1 failed=0 failed_ids=none; pillar_1: python testing/test_runner.py --mode pillar --pillar 1 => total=7 passed=7 failed=0 failed_ids=none; reruns=none`
+- [x] Audit passed (100%, blockers=0, non-blockers=0) —
+      `2026-03-18 21:07 CDT`
 - [ ] Local commit created — `YYYY-MM-DD HH:MM TZ` — `commit: <HASH>`
 - [ ] Effort rating recorded (user-reported) —
       `YYYY-MM-DD HH:MM TZ` — `rating: <TOO_EASY|EASY|PERFECT|HARD|TOO_HARD>`
