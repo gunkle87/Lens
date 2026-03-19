@@ -111,6 +111,14 @@ class ClipResolvePassTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.temp_dir = tempfile.TemporaryDirectory(prefix="lens_clip_resolver_")
         cls.library_path = Path(cls.temp_dir.name) / "render_clip_resolver_test.dll"
+        # TEST-CORE-ATTACHMENT-EXCEPTION: EXC-20260318-p1-runtime-core-ctypes
+        # Temporary direct core attachment for Pillar 1 runtime validation.
+        # Removal steps:
+        # 1) Replace this direct gcc/ctypes runtime harness with the approved
+        #    non-attached native test adapter when available.
+        # 2) Delete this subprocess gcc invocation and ctypes.CDLL load path.
+        # 3) Remove EXC-20260318-p1-runtime-core-ctypes from
+        #    testing/TEST_CORE_ATTACHMENT_EXCEPTIONS.md after revalidation.
         compile_command = [
             find_compiler(),
             "-shared",
@@ -129,6 +137,7 @@ class ClipResolvePassTests(unittest.TestCase):
             capture_output=True,
             text=True,
         )
+        # TEST-CORE-ATTACHMENT-EXCEPTION: EXC-20260318-p1-runtime-core-ctypes
         cls.library = ctypes.CDLL(str(cls.library_path))
         cls.configure_prototypes()
 

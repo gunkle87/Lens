@@ -256,6 +256,14 @@ class Pillar1IntegrationValidationTests(unittest.TestCase):
         cls._temporary_directory = tempfile.TemporaryDirectory()
         library_path = Path(cls._temporary_directory.name) / "render_native_pipeline.dll"
 
+        # TEST-CORE-ATTACHMENT-EXCEPTION: EXC-20260318-p1-runtime-core-ctypes
+        # Temporary direct core attachment for Pillar 1 runtime validation.
+        # Removal steps:
+        # 1) Replace this direct gcc/ctypes runtime harness with the approved
+        #    non-attached native test adapter when available.
+        # 2) Delete this subprocess gcc invocation and ctypes.CDLL load path.
+        # 3) Remove EXC-20260318-p1-runtime-core-ctypes from
+        #    testing/TEST_CORE_ATTACHMENT_EXCEPTIONS.md after revalidation.
         subprocess.run(
             [
                 "gcc",
@@ -275,6 +283,7 @@ class Pillar1IntegrationValidationTests(unittest.TestCase):
             text=True,
         )
 
+        # TEST-CORE-ATTACHMENT-EXCEPTION: EXC-20260318-p1-runtime-core-ctypes
         cls._library = ctypes.CDLL(str(library_path))
         cls._library_handle = cls._library._handle
         cls._library.render_native_pipeline_initialize.argtypes = [
